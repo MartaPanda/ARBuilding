@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\LightEstimation.cs" />
     <Compile Include="Assets\Scripts\PlaceObject.cs" />
+    <Compile Include="Assets\Scripts\SelectionScript.cs" />
     <None Include="Assets\Shaders\PlaneOcclusionShader.shader" />
     <Reference Include="Unity.XR.Management">
       <HintPath>/Users/salaban/BuildingAR/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>

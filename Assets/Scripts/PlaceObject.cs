@@ -46,6 +46,7 @@ public class PlaceObject : MonoBehaviour
         {
             var mousePosition = Input.mousePosition;
             touchPosition = new Vector2(mousePosition.x, mousePosition.y);
+            //print($"touchPosition {touchPosition}");
             return true;
         }
 #else
