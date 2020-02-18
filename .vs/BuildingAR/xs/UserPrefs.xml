@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{342210C3-BAE7-4487-AF37-C8F3175EEE3A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SelectionScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SetupObjectSettings.cs">
     <Files>
       <File FileName="Assets/Scripts/SelectionScript.cs" Line="23" Column="59" />
-      <File FileName="Assets/Scripts/PlaceObject.cs" Line="77" Column="68" NotebookId="1" />
+      <File FileName="Assets/Scripts/PlaceObject.cs" Line="77" Column="30" NotebookId="1" />
+      <File FileName="Assets/Scripts/SetupObjectSettings.cs" Line="3" Column="12" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ae217c3a-5af6-442f-84a1-044f875622d1" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="80377086-d1ef-42bd-b122-08e632e2c434" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
