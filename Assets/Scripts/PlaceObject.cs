@@ -33,13 +33,16 @@ public class PlaceObject : MonoBehaviour
     /// </summary>
     public GameObject spawnedObject { get; private set; }
 
+    public static PlaceObject _instance;
+
     void Awake()
     {
         m_RaycastManager = GetComponent<ARRaycastManager>();
         m_ProbeManager = GetComponent<AREnvironmentProbeManager>();
+        _instance = this;
     }
 
-    bool TryGetTouchPosition(out Vector2 touchPosition)
+    public bool TryGetTouchPosition(out Vector2 touchPosition)
     {
 #if UNITY_EDITOR
         if (Input.GetMouseButton(0))
@@ -75,7 +78,7 @@ public class PlaceObject : MonoBehaviour
             if (spawnedObject == null)
             {
                 spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
-                SetupObjectSettings._instance.setBoxColliders(spawnedObject);
+                //SetupObjectSettings._instance.setBoxColliders(spawnedObject);
                 var probePose = hitPose;
                 probePose.position.y += 1.2f;
                 m_Probe = m_ProbeManager.AddEnvironmentProbe(probePose, Vector3.one, Vector3.one);

@@ -9,18 +9,22 @@ public class SelectionScript : MonoBehaviour
 
     public void Update()
     {
-
-        var touchPosition = Input.GetTouch(0).position;
-
-        Ray ray = Camera.main.ScreenPointToRay(touchPosition);
-
-        RaycastHit hitObject;
-        if (Physics.Raycast(ray, out hitObject))
+        if (!PlaceObject._instance.TryGetTouchPosition(out Vector2 touchPosition))
+            return;
+        //if (Input.GetTouch(0).position != null)
         {
-            //PlaceObject selectedObj = hitObject.transform.GetComponent<GameObject>();
+            //var touchPositionInstance = Input.GetTouch(0).position;
 
-            print($" hit {hitObject.collider.gameObject.name}");
-            text.text = hitObject.collider.gameObject.name;
+            Ray ray = Camera.main.ScreenPointToRay(touchPosition);
+
+            RaycastHit hitObject;
+            if (Physics.Raycast(ray, out hitObject))
+            {
+                //PlaceObject selectedObj = hitObject.transform.GetComponent<GameObject>();
+
+                print($" hit {hitObject.collider.gameObject.name}");
+                text.text = hitObject.collider.gameObject.name;
+            }
         }
 
 
