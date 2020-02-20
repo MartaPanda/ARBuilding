@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\PlaceObject.cs" />
     <Compile Include="Assets\Scripts\SelectionScript.cs" />
     <Compile Include="Assets\Scripts\SetupObjectSettings.cs" />
+    <Compile Include="Assets\Scripts\SnapScroll.cs" />
     <None Include="Assets\Shaders\PlaneOcclusionShader.shader" />
     <Reference Include="Unity.XR.Management">
       <HintPath>/Users/salaban/BuildingAR/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
