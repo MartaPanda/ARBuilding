@@ -15,7 +15,7 @@ public class PlaceObject : MonoBehaviour
 {
     [SerializeField]
     [Tooltip("Instantiates this prefab on a plane at the touch location.")]
-    GameObject m_PlacedPrefab;
+    public GameObject m_PlacedPrefab;
     private AREnvironmentProbe m_Probe;
     private AREnvironmentProbeManager m_ProbeManager;
 

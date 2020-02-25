@@ -63,11 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\FloorSelect.cs" />
     <Compile Include="Assets\Scripts\LightEstimation.cs" />
     <Compile Include="Assets\Scripts\PlaceObject.cs" />
     <Compile Include="Assets\Scripts\SelectionScript.cs" />
     <Compile Include="Assets\Scripts\SetupObjectSettings.cs" />
     <Compile Include="Assets\Scripts\SnapScroll.cs" />
+    <Compile Include="Assets\SwipeDetector\SwipeDetector.cs" />
+    <Compile Include="Assets\SwipeDetector\SwipeDrawer.cs" />
+    <Compile Include="Assets\SwipeDetector\SwipeLogger.cs" />
     <None Include="Assets\Shaders\PlaneOcclusionShader.shader" />
     <Reference Include="Unity.XR.Management">
       <HintPath>/Users/salaban/BuildingAR/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
