@@ -71,12 +71,22 @@ public class FloorSelect : MonoBehaviour
                 case TouchPhase.Moved:
                     // Determine direction by comparing the current touch position with the initial one
                     direction = touch.position - startPos;
-                    print($"direction {direction}");
+
                     message = "Moving ";
                     break;
 
                 case TouchPhase.Ended:
                     // Report that the touch has ended when it ends
+                    if (touch.position.y > startPos.y)
+                    {
+                        OnFloor();
+                        print($"up");
+                    }
+                    else
+                    {
+                        OffFloor();
+                        print($"direction {direction}");
+                    }
                     message = "Ending ";
                     //OnOffFloor(direction);
 
