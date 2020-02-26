@@ -78,15 +78,16 @@ public class PlaceObject : MonoBehaviour
             if (spawnedObject == null)
             {
                 spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
+                FloorSelect._instance.GetFloorNumber(spawnedObject);
                 //SetupObjectSettings._instance.setBoxColliders(spawnedObject);
                 var probePose = hitPose;
                 probePose.position.y += 1.2f;
                 m_Probe = m_ProbeManager.AddEnvironmentProbe(probePose, Vector3.one, Vector3.one);
             }
-            else
-            {
-                spawnedObject.transform.position = hitPose.position;
-            }
+            //else
+            //{
+            //    spawnedObject.transform.position = hitPose.position;
+            //}
         }
     }
 

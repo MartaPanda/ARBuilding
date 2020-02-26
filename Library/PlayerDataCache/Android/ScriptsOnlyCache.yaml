@@ -1,12 +1,47 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-firstpass.dll:
+    - RuntimeInspectorNamespace.ArrayField
+    - RuntimeInspectorNamespace.BoolField
+    - RuntimeInspectorNamespace.BoundInputField
+    - RuntimeInspectorNamespace.BoundsField
+    - RuntimeInspectorNamespace.ColorField
+    - RuntimeInspectorNamespace.ColorPicker
+    - RuntimeInspectorNamespace.ColorPickerAlphaSlider
+    - RuntimeInspectorNamespace.ColorWheelControl
+    - RuntimeInspectorNamespace.DecimalField
+    - RuntimeInspectorNamespace.DraggedReferenceItem
+    - RuntimeInspectorNamespace.EnumField
+    - RuntimeInspectorNamespace.ExposedMethodField
+    - RuntimeInspectorNamespace.GameObjectField
+    - RuntimeInspectorNamespace.HierarchyDragDropListener
+    - RuntimeInspectorNamespace.HierarchyItemRoot
+    - RuntimeInspectorNamespace.HierarchyItemSearchEntry
+    - RuntimeInspectorNamespace.HierarchyItemTransform
+    - RuntimeInspectorNamespace.IntegerField
+    - RuntimeInspectorNamespace.ObjectField
+    - RuntimeInspectorNamespace.ObjectReferenceField
+    - RuntimeInspectorNamespace.ObjectReferencePicker
+    - RuntimeInspectorNamespace.ObjectReferencePickerItem
+    - RuntimeInspectorNamespace.PointerEventListener
+    - RuntimeInspectorNamespace.RectField
+    - RuntimeInspectorNamespace.RecycledListView
+    - RuntimeInspectorNamespace.RuntimeHierarchy
+    - RuntimeInspectorNamespace.RuntimeInspector
+    - RuntimeInspectorNamespace.RuntimeInspectorSettings
+    - RuntimeInspectorNamespace.StringField
+    - RuntimeInspectorNamespace.TextureReferenceField
+    - RuntimeInspectorNamespace.UISkin
+    - RuntimeInspectorNamespace.Vector2Field
+    - RuntimeInspectorNamespace.Vector3Field
+    - RuntimeInspectorNamespace.Vector4Field
+    - RuntimeInspectorNamespace.WindowDragHandler
     Assembly-CSharp.dll:
     - FloorSelect
     - LightEstimation
     - PlaceObject
     - SelectionScript
     - SetupObjectSettings
-    - SnapScroll
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatConsoleWindow
     - Unity.Android.Logcat.AndroidLogcatManager
@@ -40,16 +75,24 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.AspectRatioFitter
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Mask
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
+    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
     Assets/Scenes/AR.unity:
     - Class: 1
@@ -101,19 +144,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11552}
     - Class: 114
+      Script: {instanceID: 11642}
+    - Class: 114
       Script: {instanceID: 11650}
+    - Class: 114
+      Script: {instanceID: 11662}
     - Class: 114
       Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 11918}
+      Script: {instanceID: 11756}
+    - Class: 114
+      Script: {instanceID: 11784}
     - Class: 114
       Script: {instanceID: 11980}
     - Class: 114
       Script: {instanceID: 12038}
     - Class: 114
       Script: {instanceID: 12192}
-    - Class: 114
-      Script: {instanceID: 12242}
     - Class: 114
       Script: {instanceID: 12270}
     - Class: 114
@@ -125,9 +172,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12624}
     - Class: 114
+      Script: {instanceID: 12648}
+    - Class: 114
+      Script: {instanceID: 12756}
+    - Class: 114
       Script: {instanceID: 12872}
     - Class: 114
+      Script: {instanceID: 12894}
+    - Class: 114
       Script: {instanceID: 12922}
+    - Class: 114
+      Script: {instanceID: 12934}
     - Class: 114
       Script: {instanceID: 13150}
     - Class: 114
@@ -147,13 +202,85 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13666}
     - Class: 114
-      Script: {instanceID: 13718}
-    - Class: 114
       Script: {instanceID: 13722}
+    - Class: 114
+      Script: {instanceID: 13758}
     - Class: 114
       Script: {instanceID: 13770}
     - Class: 114
       Script: {instanceID: 13776}
+    - Class: 114
+      Script: {instanceID: 13800}
+    - Class: 114
+      Script: {instanceID: 99508}
+    - Class: 114
+      Script: {instanceID: 99510}
+    - Class: 114
+      Script: {instanceID: 99514}
+    - Class: 114
+      Script: {instanceID: 99516}
+    - Class: 114
+      Script: {instanceID: 99520}
+    - Class: 114
+      Script: {instanceID: 99524}
+    - Class: 114
+      Script: {instanceID: 99526}
+    - Class: 114
+      Script: {instanceID: 99528}
+    - Class: 114
+      Script: {instanceID: 99532}
+    - Class: 114
+      Script: {instanceID: 99534}
+    - Class: 114
+      Script: {instanceID: 99536}
+    - Class: 114
+      Script: {instanceID: 99538}
+    - Class: 114
+      Script: {instanceID: 99540}
+    - Class: 114
+      Script: {instanceID: 99542}
+    - Class: 114
+      Script: {instanceID: 99544}
+    - Class: 114
+      Script: {instanceID: 99546}
+    - Class: 114
+      Script: {instanceID: 99548}
+    - Class: 114
+      Script: {instanceID: 99554}
+    - Class: 114
+      Script: {instanceID: 99556}
+    - Class: 114
+      Script: {instanceID: 99562}
+    - Class: 114
+      Script: {instanceID: 99564}
+    - Class: 114
+      Script: {instanceID: 99568}
+    - Class: 114
+      Script: {instanceID: 99570}
+    - Class: 114
+      Script: {instanceID: 99572}
+    - Class: 114
+      Script: {instanceID: 99574}
+    - Class: 114
+      Script: {instanceID: 99576}
+    - Class: 114
+      Script: {instanceID: 99578}
+    - Class: 114
+      Script: {instanceID: 99580}
+    - Class: 114
+      Script: {instanceID: 99596}
+    - Class: 114
+      Script: {instanceID: 99598}
+    - Class: 114
+      Script: {instanceID: 99600}
+    - Class: 114
+      Script: {instanceID: 99602}
+    - Class: 114
+      Script: {instanceID: 99606}
+    - Class: 114
+      Script: {instanceID: 99608}
+    - Class: 114
+      Script: {instanceID: 99610}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -943,7 +1070,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 3d32868d84360296bb2ab873666fb3a9
+      Hash: 3a6b44b3d353d02d7e603cf38d7e08ea
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FloorSelect
@@ -983,6 +1110,240 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a6e172f1c8d2005399b63596e55ceafa
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: Vector3Field
+  - hash:
+      serializedVersion: 2
+      Hash: d7dce94b90f148efd02a3821e85e87da
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: DecimalField
+  - hash:
+      serializedVersion: 2
+      Hash: b9952889446f051bc9b1c62444e236be
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ObjectReferencePickerItem
+  - hash:
+      serializedVersion: 2
+      Hash: 4f8dc41bead6339345d2e7f26b438c49
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ColorPickerAlphaSlider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: BoundInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 623a022fe8c01b89bf7730f496e5f59e
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ColorPicker
+  - hash:
+      serializedVersion: 2
+      Hash: 799ffb28792094bd97815577ce94c7a6
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: GameObjectField
+  - hash:
+      serializedVersion: 2
+      Hash: d7dce94b90f148efd02a3821e85e87da
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: IntegerField
+  - hash:
+      serializedVersion: 2
+      Hash: 6240cb7a42b1a9b0ff47319a7aebb8f3
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: RuntimeInspectorSettings
+  - hash:
+      serializedVersion: 2
+      Hash: dbb71f3a0160f4844eddea83b716a9e6
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: UISkin
+  - hash:
+      serializedVersion: 2
+      Hash: 51ac11477dd44fdfda2ff53e0a7c985b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: HierarchyItemSearchEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: HierarchyDragDropListener
+  - hash:
+      serializedVersion: 2
+      Hash: d7dce94b90f148efd02a3821e85e87da
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: StringField
+  - hash:
+      serializedVersion: 2
+      Hash: 51ac11477dd44fdfda2ff53e0a7c985b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: HierarchyItemRoot
+  - hash:
+      serializedVersion: 2
+      Hash: 6aa292a1c49e5c72f49f9fb714a282a5
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: RuntimeInspector
+  - hash:
+      serializedVersion: 2
+      Hash: 8fb9ead9ad0e41e4d25b31b493bb9146
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ColorField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: PointerEventListener
+  - hash:
+      serializedVersion: 2
+      Hash: d9f72468a83361c2e15ed68ac6fcc36b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: RecycledListView
+  - hash:
+      serializedVersion: 2
+      Hash: 86733262c8a32898dd98d19b7e42175d
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ObjectReferencePicker
+  - hash:
+      serializedVersion: 2
+      Hash: 0e7f4f3c941791c17baf37166a39efa3
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ObjectReferenceField
+  - hash:
+      serializedVersion: 2
+      Hash: 69f512d12e796f63e97acf8e7a8ff2d1
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ObjectField
+  - hash:
+      serializedVersion: 2
+      Hash: f48dd2637aeb968f1b4458284e4b6e67
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: RectField
+  - hash:
+      serializedVersion: 2
+      Hash: 7cf114b71170ad88ddc00d5c4051513d
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: EnumField
+  - hash:
+      serializedVersion: 2
+      Hash: d9f3e903da9c2598212f05907e5f4e9e
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: Vector4Field
+  - hash:
+      serializedVersion: 2
+      Hash: 7750f878e9ca88f1a6555e9593214241
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: Vector2Field
+  - hash:
+      serializedVersion: 2
+      Hash: e8d2f5f4b3ed63b921d36c75e615d133
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: DraggedReferenceItem
+  - hash:
+      serializedVersion: 2
+      Hash: afbc26335868ab1e49d7f50bbaff9e04
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: TextureReferenceField
+  - hash:
+      serializedVersion: 2
+      Hash: f15aeb41c786501dad21cd7cc9599961
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: RuntimeHierarchy
+  - hash:
+      serializedVersion: 2
+      Hash: 47712810058ccfa000f36902118c6b7b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: DraggedReferenceSourceCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: RecycledListItem
+  - hash:
+      serializedVersion: 2
+      Hash: db10c5a7310460b34602ca58009ddb99
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: PseudoSceneSourceTransform
+  - hash:
+      serializedVersion: 2
+      Hash: aa39a902b0599c15b43a630a123d8f1a
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: DraggedReferenceSourceUI
+  - hash:
+      serializedVersion: 2
+      Hash: e140097331492b499ac08fc58ddf8139
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: BoolField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: WindowDragHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 3828e8e4b647ded6d039cfff97ee78b1
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ArrayField
+  - hash:
+      serializedVersion: 2
+      Hash: 51ac11477dd44fdfda2ff53e0a7c985b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: HierarchyItemTransform
+  - hash:
+      serializedVersion: 2
+      Hash: 944f19e365801b9d4f4bb082dba36add
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ColorWheelControl
+  - hash:
+      serializedVersion: 2
+      Hash: d681d0da7ef60222be8e1a128cb76144
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: BoundsField
+  - hash:
+      serializedVersion: 2
+      Hash: a6bb7e14fa4d1091cc71baac5b83b8da
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: RuntimeInspectorNamespace
+    className: ExposedMethodField
   platform: 13
   scenePathNames:
   - Assets/Scenes/AR.unity

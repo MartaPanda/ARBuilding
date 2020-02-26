@@ -10,11 +10,18 @@ public class FloorSelect : MonoBehaviour
     public List<GameObject> floors = new List<GameObject>();
 
     public int activeFloor;
+    private Vector2 startPos;
+    private Vector2 direction;
+    public static FloorSelect _instance;
+
+    public void Awake()
+    {
+        _instance = this;
+    }
 
     public void GetFloorNumber(GameObject g)
     {
         GameObject child = null;
-
         for (int i = 0; i < floorCount; i++)
         {
             child = g.transform.GetChild(i).gameObject;
@@ -43,15 +50,9 @@ public class FloorSelect : MonoBehaviour
         }
     }
 
-    public Vector2 startPos;
-    public Vector2 direction;
-
-    public Text m_Text;
-    string message;
     public void Update()
     {
         //Update the Text on the screen depending on current TouchPhase, and the current direction vector
-        //m_Text.text = "Touch : " + message + "in direction" + direction;
         // Track a single touch as a direction control.
         if (Input.touchCount > 0)
         {
@@ -64,15 +65,12 @@ public class FloorSelect : MonoBehaviour
                 case TouchPhase.Began:
                     // Record initial touch position.
                     startPos = touch.position;
-                    message = "Begun ";
                     break;
 
                 //Determine if the touch is a moving touch
                 case TouchPhase.Moved:
                     // Determine direction by comparing the current touch position with the initial one
                     direction = touch.position - startPos;
-
-                    message = "Moving ";
                     break;
 
                 case TouchPhase.Ended:
@@ -82,22 +80,13 @@ public class FloorSelect : MonoBehaviour
                         OnFloor();
                         print($"up");
                     }
-                    else
+                    if (touch.position.y < startPos.y)
                     {
                         OffFloor();
-                        print($"direction {direction}");
+                        print($"down");
                     }
-                    message = "Ending ";
-                    //OnOffFloor(direction);
-
-
                     break;
             }
         }
     }
-
-
-
-
-
 }
